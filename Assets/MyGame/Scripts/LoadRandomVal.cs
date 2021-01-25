@@ -1,18 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class LoadRandomVal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public MyScriptableObject myData;
+    public Text randomValText;
+    public void LoadRandomValue()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        randomValText.text = myData.randomVal.ToString();
     }
 }

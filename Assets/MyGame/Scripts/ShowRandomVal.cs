@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ShowRandomVal : MonoBehaviour
+public class ShowRandomValue : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public Text guiTextRandomVal;
+    public MyScriptableObject myData;
+
+    public void GetRandomVal()
     {
-        
+        float rndVal = Random.Range(1.0f, 10.0f);
+        guiTextRandomVal.text = rndVal.ToString();
+        myData.randomVal = rndVal;
+        myData.test = "Lukas";
     }
 }
