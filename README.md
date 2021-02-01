@@ -27,4 +27,4 @@ Project is finished.
 
 I learned to implement SCs in my projects. Furthermore, I learned how to connect scenes.
 
-Copyright by you :)
+Copyright by lwildmann
